@@ -1,6 +1,12 @@
 # TimerDok
 
 
+# Credits
+- Timer tray icon: Icon by "Raj Dev" on [freeicons.io][timer-tray-icon]
+
+
+[timer-tray-icon]: https://freeicons.io/technology-icons-401/asset-alarm-time-icon-19305
+
 
 ## How I set up this repo
 ```sh
@@ -24,4 +30,6 @@ npm install --save-dev eslint-config-prettier
 # 3. Add TailwindCSS: https://tailwindcss.com/docs/installation/using-postcss
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -P
+
+# 4. Configure tray icon: https://www.electronjs.org/docs/latest/api/tray
 ```
