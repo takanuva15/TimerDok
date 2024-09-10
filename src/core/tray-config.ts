@@ -1,4 +1,5 @@
 import { app, Tray, Menu } from "electron";
+import { createSettingsWindow } from "./settings/settings-main";
 
 export const configureTrayIcon = () => {
   let appIcon = null;
@@ -8,7 +9,7 @@ export const configureTrayIcon = () => {
       {
         label: "Settings",
         click: () => {
-          console.log("Settings");
+          createSettingsWindow();
         },
       },
       { label: "About", role: "about" },
@@ -18,4 +19,4 @@ export const configureTrayIcon = () => {
 
     appIcon.setContextMenu(contextMenu);
   });
-}
+};
